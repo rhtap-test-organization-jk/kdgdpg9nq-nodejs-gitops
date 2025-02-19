@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: kdgdpg9nq-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: kdgdpg9nq-nodejs 
+  name: kdgdpg9nq-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: kdgdpg9nq-nodejs 
